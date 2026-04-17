@@ -1,4 +1,5 @@
-﻿using CareQual_Tracker_Models.Models.Staff;
+﻿using CareQual_Tracker_Models.Models;
+using CareQual_Tracker_Models.Models.Staff;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,8 +17,22 @@ namespace CareQual_Tracker.Data
         }
 
 
-        //public DbSet<CareHome> CareHomes { get; set; }
         public DbSet<Staff> Staff { get; set; }
-        //public DbSet<Qualification> Qualifications { get; set; }
+        public DbSet<StaffQualification> StaffQualification { get; set; }
+        public DbSet<StaffSalary> StaffSalary { get; set; }
+
+
+        public DbSet<CareGroup> CareGroup { get; set; }
+        public DbSet<CareHome> CareHome { get; set; }
+
+        public DbSet<CareQualTrackerUser> CareQualTrackerUser { get; set; }
+
+
+        public DbSet<Qualification> Qualification { get; set; }
+        public DbSet<Role> Role { get; set; }
+        public DbSet<SalaryFrequency> SalaryFrequency { get; set; }
+
+
+
     }
 }

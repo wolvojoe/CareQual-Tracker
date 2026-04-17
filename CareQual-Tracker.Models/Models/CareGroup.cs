@@ -8,5 +8,8 @@ namespace CareQual_Tracker_Models.Models
 {
     public class CareGroup
     {
+        public int CareGroupId { get; set; }
+
+
     }
 }
