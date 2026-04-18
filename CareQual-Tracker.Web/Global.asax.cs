@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Ninject;
+using Ninject.Web.Common.WebHost;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,13 +10,20 @@ using System.Web.SessionState;
 
 namespace CareQual_Tracker.Web
 {
-    public class Global : System.Web.HttpApplication
+    public class Global : NinjectHttpApplication
     {
 
         protected void Application_Start(object sender, EventArgs e)
         {
             RegisterRoutes(RouteTable.Routes);
         }
+
+        protected override IKernel CreateKernel()
+        {
+            IKernel kernel = new StandardKernel(new NinjectBindings());
+            return kernel;
+        }
+
 
         protected void Session_Start(object sender, EventArgs e)
         {

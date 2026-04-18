@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CareQual_Tracker.Application.Authentication;
+using CareQual_Tracker.Application.Authentication.Interfaces;
+using Ninject;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -9,8 +12,12 @@ using System.Web.UI.WebControls;
 
 namespace CareQual_Tracker.Web.Pages.LoggedOut
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Login : Ninject.Web.PageBase
     {
+        [Inject]
+        public ICareQualUserAuthService CareQualUserAuthService { get; set; }
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -30,9 +37,9 @@ namespace CareQual_Tracker.Web.Pages.LoggedOut
             }
         }
 
-        private bool ValidateUser(string email, string password)
+        private bool ValidateUser(string emailAddress, string password)
         {
-            return email == "admin@admin.co.uk" && password == "password";
+            return CareQualUserAuthService.Login(emailAddress, password);
         }
     }
 }

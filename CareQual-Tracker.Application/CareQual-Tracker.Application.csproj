@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authentication\CareQualUserAuthService.cs" />
+    <Compile Include="Authentication\Interfaces\ICareQualUserAuthService.cs" />
+    <Compile Include="Authentication\PasswordHelper.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -49,6 +51,10 @@
     <ProjectReference Include="..\CareQual-Tracker.Data\CareQual-Tracker.Data.csproj">
       <Project>{49e0cc8c-cd17-4dc3-ac73-9374fe1fdb7c}</Project>
       <Name>CareQual-Tracker.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CareQual-Tracker.Models\CareQual-Tracker.Models.csproj">
+      <Project>{17EC6DC8-9204-44C3-B206-53C80C6357E3}</Project>
+      <Name>CareQual-Tracker.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
