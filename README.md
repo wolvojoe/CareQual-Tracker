@@ -14,7 +14,7 @@ grade and attainment date
 
 ## Built With
 
-C# Web Forms N-tier Monolith
-AdminLTE 4 Bootstrap Template
-Entity Framework - Code First
-Ninject
+C# Web Forms N-tier Monolith<br/>
+AdminLTE 4 Bootstrap Template<br/>
+Entity Framework - Code First<br/>
+Ninject<br/>
