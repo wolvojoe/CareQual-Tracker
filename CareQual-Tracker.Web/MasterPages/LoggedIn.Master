@@ -96,7 +96,11 @@
                     <!--begin::End Navbar Links-->
 
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
 
+                            <asp:Button runat="server" ID="btnLogOut" Text="Logout" CssClass="btn btn-danger" OnClick="btnLogOut_Click" />
+
+                        </li>
                     </ul>
 
                     <!--end::End Navbar Links-->
