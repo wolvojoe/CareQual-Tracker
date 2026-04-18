@@ -9,7 +9,7 @@
         <div class="login-logo">
             <img src="../../Logos/CareQualLogo-Tran.jpg"
                 alt="CareQual Tracker Logo"
-                class="brand-image opacity-75 shadow w-25" />
+                class="brand-image opacity-75 shadow w-50" />
 
         </div>
         <!-- /.login-logo -->

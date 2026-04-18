@@ -144,9 +144,9 @@
     <Folder Include="UserControls\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CareQual-Tracker.Data\CareQual-Tracker.Data.csproj">
-      <Project>{49e0cc8c-cd17-4dc3-ac73-9374fe1fdb7c}</Project>
-      <Name>CareQual-Tracker.Data</Name>
+    <ProjectReference Include="..\CareQual-Tracker.Application\CareQual-Tracker.Application.csproj">
+      <Project>{8e87e055-bca4-491d-99f0-4c98bafe8d6a}</Project>
+      <Name>CareQual-Tracker.Application</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

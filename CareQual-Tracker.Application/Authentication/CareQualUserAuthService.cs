@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CareQual_Tracker_Models.Models
+namespace CareQual_Tracker.Application.Authentication
 {
-    public class CareQualTrackerUser
+    public class CareQualUserAuthService
     {
-        public int CareQualTrackerUserId { get; set; }
+
 
     }
 }

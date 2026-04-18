@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="Models\CareGroup.cs" />
     <Compile Include="Models\CareHome.cs" />
-    <Compile Include="Models\CareQualTrackerUser.cs" />
+    <Compile Include="Models\CareQualUser.cs" />
     <Compile Include="Models\Qualification.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\SalaryFrequency.cs" />

@@ -49,7 +49,7 @@ namespace CareQual_Tracker.Web
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.MapPageRoute(
-                "CareQual/Dashboard", "Dashboard", "~/Pages/LoggedIn/Dashboard.aspx"
+                "Dashboard", "CareQual/Dashboard", "~/Pages/LoggedIn/Dashboard.aspx"
             );
             routes.MapPageRoute(
                 "Login", "Login", "~/Pages/LoggedOut/Login.aspx"

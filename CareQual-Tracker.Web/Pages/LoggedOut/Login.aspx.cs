@@ -21,7 +21,7 @@ namespace CareQual_Tracker.Web.Pages.LoggedOut
             if (ValidateUser(txtEmail.Text, txtPassword.Text))
             {
                 FormsAuthentication.SetAuthCookie(txtEmail.Text, false);
-                Response.Redirect("Default.aspx");
+                Response.Redirect("~/CareQual/Dashboard");
             }
             else
             {

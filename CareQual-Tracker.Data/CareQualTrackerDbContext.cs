@@ -25,7 +25,7 @@ namespace CareQual_Tracker.Data
         public DbSet<CareGroup> CareGroup { get; set; }
         public DbSet<CareHome> CareHome { get; set; }
 
-        public DbSet<CareQualTrackerUser> CareQualTrackerUser { get; set; }
+        public DbSet<CareQualUser> CareQualUser { get; set; }
 
 
         public DbSet<Qualification> Qualification { get; set; }
