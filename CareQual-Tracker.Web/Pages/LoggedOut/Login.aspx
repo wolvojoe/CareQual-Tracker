@@ -38,15 +38,11 @@
                 </div>
                 <!--begin::Row-->
                 <div class="row">
-                    <div class="col-8">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            <label class="form-check-label" for="flexCheckDefault">Remember Me </label>
-                        </div>
-                    </div>
                     <!-- /.col -->
-                    <div class="col-4">
+                    <div class="col-12">
                         <div class="d-grid gap-2">
+                            <asp:Button runat="server" ID="btnRegister" Text="Register" CssClass="btn btn-danger" OnClick="btnRegister_Click" />
+
                             <asp:Button runat="server" ID="btnLogin" Text="Sign In" CssClass="btn btn-primary" OnClick="btnLogin_Click" />
                         </div>
                     </div>

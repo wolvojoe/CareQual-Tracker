@@ -20,7 +20,7 @@ namespace CareQual_Tracker.Web.MasterPages
             FormsAuthentication.SignOut();
             Session.Abandon();
 
-            Response.Redirect(GetRouteUrl("Login", null));
+            FormsAuthentication.RedirectToLoginPage();
         }
 
     }

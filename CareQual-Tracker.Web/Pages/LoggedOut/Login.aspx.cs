@@ -41,5 +41,20 @@ namespace CareQual_Tracker.Web.Pages.LoggedOut
         {
             return CareQualUserAuthService.Login(emailAddress, password);
         }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var user = CareQualUserAuthService.Register(txtEmail.Text, txtPassword.Text);
+                FormsAuthentication.SetAuthCookie(user.EmailAddress, false);
+                Response.Redirect("~/CareQual/Dashboard");
+            }
+            catch (Exception ex)
+            {
+                lblLoginError.Text = ex.Message;
+                pnlLoginError.Visible = true;
+            }
+        }
     }
 }

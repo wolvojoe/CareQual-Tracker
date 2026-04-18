@@ -23,5 +23,19 @@ namespace CareQual_Tracker.Data.Repositories
         {
             return _context.CareQualUser.Where(x => x.EmailAddress == emailAddress).FirstOrDefault();
         }
+
+        public CareQualUser Create(string emailAddress, string passwordHash, string passwordSalt)
+        {
+            var user = new CareQualUser
+            {
+                EmailAddress = emailAddress,
+                PasswordSalt = passwordSalt,
+                PasswordHash = passwordHash
+            };
+
+            _context.CareQualUser.Add(user);
+            _context.SaveChanges();
+            return user;
+        }
     }
 }

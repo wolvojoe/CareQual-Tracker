@@ -1,6 +1,7 @@
 ﻿using CareQual_Tracker.Application.Authentication.Interfaces;
 using CareQual_Tracker.Data.Repositories;
 using CareQual_Tracker.Data.Repositories.Interfaces;
+using CareQual_Tracker_Models.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,5 +41,16 @@ namespace CareQual_Tracker.Application.Authentication
             return true;
         }
 
+        public CareQualUser Register(string emailAddress, string password)
+        {
+            var existingUser = _careQualUserRepository.GetByEmailAddress(emailAddress);
+            if (existingUser != null)
+            {
+                throw new Exception("A user with this email address already exists.");
+            }
+            PasswordHelper.CreatePasswordHash(password, out string hash, out string salt);
+            return _careQualUserRepository.Create(emailAddress, hash, salt);
+
+        }
     }
 }

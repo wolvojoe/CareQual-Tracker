@@ -13,10 +13,14 @@ namespace CareQual_Tracker.Web
     public class Global : NinjectHttpApplication
     {
 
-        protected void Application_Start(object sender, EventArgs e)
+
+        protected override void OnApplicationStarted()
         {
+            base.OnApplicationStarted();
+
             RegisterRoutes(RouteTable.Routes);
         }
+
 
         protected override IKernel CreateKernel()
         {
@@ -24,36 +28,6 @@ namespace CareQual_Tracker.Web
             return kernel;
         }
 
-
-        protected void Session_Start(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_BeginRequest(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_AuthenticateRequest(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_Error(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Session_End(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_End(object sender, EventArgs e)
-        {
-
-        }
 
         public static void RegisterRoutes(RouteCollection routes)
         {

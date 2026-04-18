@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\CareGroup.cs" />
     <Compile Include="Models\CareHome.cs" />
     <Compile Include="Models\CareQualUser.cs" />
     <Compile Include="Models\Qualification.cs" />

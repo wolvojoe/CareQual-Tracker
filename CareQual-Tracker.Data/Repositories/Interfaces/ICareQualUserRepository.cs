@@ -11,5 +11,7 @@ namespace CareQual_Tracker.Data.Repositories.Interfaces
     {
         CareQualUser GetByEmailAddress(string emailAddress);
 
+        CareQualUser Create(string emailAddress, string passwordHash, string passwordSalt);
+
     }
 }

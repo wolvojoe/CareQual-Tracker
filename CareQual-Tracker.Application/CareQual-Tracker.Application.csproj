@@ -44,7 +44,6 @@
     <Compile Include="Authentication\CareQualUserAuthService.cs" />
     <Compile Include="Authentication\Interfaces\ICareQualUserAuthService.cs" />
     <Compile Include="Authentication\PasswordHelper.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

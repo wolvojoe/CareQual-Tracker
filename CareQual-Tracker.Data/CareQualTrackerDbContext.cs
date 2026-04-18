@@ -22,7 +22,6 @@ namespace CareQual_Tracker.Data
         public DbSet<StaffSalary> StaffSalary { get; set; }
 
 
-        public DbSet<CareGroup> CareGroup { get; set; }
         public DbSet<CareHome> CareHome { get; set; }
 
         public DbSet<CareQualUser> CareQualUser { get; set; }
