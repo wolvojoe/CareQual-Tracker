@@ -112,7 +112,7 @@
                     <a href="./index.html" class="brand-link">
                         <!--begin::Brand Image-->
                         <img
-                            src="../Logos/CareQualLogo-Image.jpg"
+                            src="../../Logos/CareQualLogo-Image.jpg"
                             alt="CareQual Tracker Logo"
                             class="brand-image opacity-75 shadow" />
                         <!--end::Brand Image-->

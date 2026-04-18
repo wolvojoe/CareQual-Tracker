@@ -83,22 +83,36 @@
     <Content Include="Logos\CareQualLogo-Image.jpg" />
     <Content Include="Logos\CareQualLogo-Tran.jpg" />
     <Content Include="Logos\CareQualLogo.jpg" />
-    <Content Include="Pages\Dashboard.aspx" />
+    <Content Include="Pages\LoggedIn\Dashboard.aspx" />
+    <Content Include="Pages\LoggedOut\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MasterPages\LoggedOut.Master.cs">
+      <DependentUpon>LoggedOut.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\LoggedOut.Master.designer.cs">
+      <DependentUpon>LoggedOut.Master</DependentUpon>
+    </Compile>
     <Compile Include="MasterPages\LoggedIn.Master.cs">
       <DependentUpon>LoggedIn.Master</DependentUpon>
     </Compile>
     <Compile Include="MasterPages\LoggedIn.Master.designer.cs">
       <DependentUpon>LoggedIn.Master</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Dashboard.aspx.cs">
+    <Compile Include="Pages\LoggedIn\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Dashboard.aspx.designer.cs">
+    <Compile Include="Pages\LoggedIn\Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoggedOut\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoggedOut\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -110,6 +124,7 @@
     <Content Include="Design\css\adminlte.rtl.min.css.map" />
     <Content Include="Design\js\adminlte.js.map" />
     <Content Include="Design\js\adminlte.min.js.map" />
+    <Content Include="MasterPages\LoggedOut.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
