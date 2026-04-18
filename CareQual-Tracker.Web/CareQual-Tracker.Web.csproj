@@ -74,24 +74,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Global.asax" />
-    <Content Include="HelloWorld.aspx" />
+    <Content Include="Design\css\adminlte.css" />
+    <Content Include="Design\css\adminlte.min.css" />
+    <Content Include="Design\css\adminlte.rtl.css" />
+    <Content Include="Design\css\adminlte.rtl.min.css" />
+    <Content Include="Design\js\adminlte.js" />
+    <Content Include="Design\js\adminlte.min.js" />
+    <Content Include="Logos\CareQualLogo-Image.jpg" />
+    <Content Include="Logos\CareQualLogo-Tran.jpg" />
+    <Content Include="Logos\CareQualLogo.jpg" />
+    <Content Include="Pages\Dashboard.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
+    <Compile Include="MasterPages\LoggedIn.Master.cs">
+      <DependentUpon>LoggedIn.Master</DependentUpon>
     </Compile>
-    <Compile Include="HelloWorld.aspx.cs">
-      <DependentUpon>HelloWorld.aspx</DependentUpon>
+    <Compile Include="MasterPages\LoggedIn.Master.designer.cs">
+      <DependentUpon>LoggedIn.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HelloWorld.aspx.designer.cs">
-      <DependentUpon>HelloWorld.aspx</DependentUpon>
+    <Compile Include="Pages\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPages\LoggedIn.Master" />
+    <Content Include="Design\css\adminlte.css.map" />
+    <Content Include="Design\css\adminlte.min.css.map" />
+    <Content Include="Design\css\adminlte.rtl.css.map" />
+    <Content Include="Design\css\adminlte.rtl.min.css.map" />
+    <Content Include="Design\js\adminlte.js.map" />
+    <Content Include="Design\js\adminlte.min.js.map" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -102,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="UserControls\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CareQual-Tracker.Data\CareQual-Tracker.Data.csproj">
