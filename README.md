@@ -1,5 +1,8 @@
 # CareQual-Tracker
 
+![CareQual-Tracker Logo](https://raw.githubusercontent.com/wolvojoe/CareQual-Tracker/refs/heads/main/CareQual-Tracker.Web/Logos/CareQualLogo-Tran.jpg)
+
+
 Task 
 1.  Allow care home records to be created. Dataset must contain as a minimum ‘Home Name’ 
 2.  Allows care staff records to be added, edited and removed to care homes. Data set must 
