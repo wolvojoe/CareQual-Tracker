@@ -1,4 +1,5 @@
 ﻿using CareQual_Tracker.Models.Models;
+using CareQual_Tracker.ViewModels.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace CareQual_Tracker.Application.Administrator.Interfaces
     public interface IQualificationService
     {
 
-        List<Qualification> GetAllQualifications();
+        List<CareQualUserViewModel> GetAllQualifications();
 
     }
 }
