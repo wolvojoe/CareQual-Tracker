@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CareQual_Tracker.Models.Models
+namespace CareQual_Tracker.ViewModels.ViewModels
 {
-    public class Qualification
+    public class QualificationViewModel
     {
         public int QualificationId { get; set; }
 

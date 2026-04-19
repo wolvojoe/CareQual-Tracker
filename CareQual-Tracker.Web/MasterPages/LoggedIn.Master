@@ -71,6 +71,7 @@
         integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4="
         crossorigin="anonymous" />
 
+    <link href="../Design/CareQual/CareQual.css" rel="stylesheet" />
 
 </head>
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
@@ -79,7 +80,7 @@
         <!--begin::App Wrapper-->
         <div class="app-wrapper">
             <!--begin::Header-->
-            <nav class="app-header navbar navbar-expand bg-body">
+            <nav class="app-header navbar navbar-expand bg-secondary" data-bs-theme="dark">
                 <!--begin::Container-->
                 <div class="container-fluid">
                     <!--begin::Start Navbar Links-->
@@ -109,11 +110,11 @@
             </nav>
             <!--end::Header-->
             <!--begin::Sidebar-->
-            <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+            <aside class="app-sidebar shadow bg-primary" data-bs-theme="dark">
                 <!--begin::Sidebar Brand-->
                 <div class="sidebar-brand">
                     <!--begin::Brand Link-->
-                    <a href="./index.html" class="brand-link">
+                    <a href="/CareQual/Dashboard" class="brand-link">
                         <!--begin::Brand Image-->
                         <img
                             src="../../Logos/CareQualLogo-Image.jpg"
@@ -140,7 +141,7 @@
                             id="navigation">
 
                             <li class="nav-item">
-                                <a href="./generate/theme.html" class="nav-link">
+                                <a href="./Dashboard" class="nav-link">
                                     <i class="nav-icon bi bi-speedometer"></i>
                                     <p>Dashboard</p>
                                 </a>
@@ -172,7 +173,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="./generate/theme.html" class="nav-link">
+                                <a href="./Qualifications" class="nav-link">
                                     <i class="nav-icon bi bi-award-fill"></i>
                                     <p>Qualifications</p>
                                 </a>
@@ -194,14 +195,16 @@
                         <!--begin::Row-->
                         <div class="row">
                             <div class="col-sm-6">
-                                <h3 class="mb-0">Dashboard</h3>
+                                <asp:ContentPlaceHolder ID="cphPageName" runat="server">
+
+                                </asp:ContentPlaceHolder>
                             </div>
-                            <div class="col-sm-6">
+<%--                            <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-end">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                                 </ol>
-                            </div>
+                            </div>--%>
                         </div>
                         <!--end::Row-->
                     </div>

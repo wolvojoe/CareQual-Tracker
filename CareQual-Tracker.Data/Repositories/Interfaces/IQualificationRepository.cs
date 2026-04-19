@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace CareQual_Tracker.Data.Repositories.Interfaces
 {
-    public interface ICareQualUserRepository
+    public interface IQualificationRepository
     {
-        CareQualUser GetByEmailAddress(string emailAddress);
 
-        CareQualUser Create(string emailAddress, string passwordHash, string passwordSalt);
-
+        List<Qualification> GetAllQualifications();
     }
 }

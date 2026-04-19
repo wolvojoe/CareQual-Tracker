@@ -1,5 +1,5 @@
 ﻿using CareQual_Tracker.Data.Repositories.Interfaces;
-using CareQual_Tracker_Models.Models;
+using CareQual_Tracker.Models.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

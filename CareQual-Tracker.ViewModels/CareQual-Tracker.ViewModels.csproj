@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8E87E055-BCA4-491D-99F0-4C98BAFE8D6A}</ProjectGuid>
+    <ProjectGuid>{6397C307-E8C4-4A86-8BB3-F202F3B75510}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CareQual_Tracker.Application</RootNamespace>
-    <AssemblyName>CareQual-Tracker.Application</AssemblyName>
+    <RootNamespace>CareQual_Tracker.ViewModels</RootNamespace>
+    <AssemblyName>CareQual-Tracker.ViewModels</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -105,29 +105,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrator\Interfaces\IQualificationService.cs" />
-    <Compile Include="Administrator\QualificationService.cs" />
-    <Compile Include="Authentication\CareQualUserAuthService.cs" />
-    <Compile Include="Authentication\Interfaces\ICareQualUserAuthService.cs" />
-    <Compile Include="Authentication\PasswordHelper.cs" />
+    <Compile Include="Mapping\CareQualUserProfile.cs" />
+    <Compile Include="Mapping\QualificationProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CareQual-Tracker.Data\CareQual-Tracker.Data.csproj">
-      <Project>{49e0cc8c-cd17-4dc3-ac73-9374fe1fdb7c}</Project>
-      <Name>CareQual-Tracker.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CareQual-Tracker.Models\CareQual-Tracker.Models.csproj">
-      <Project>{17EC6DC8-9204-44C3-B206-53C80C6357E3}</Project>
-      <Name>CareQual-Tracker.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CareQual-Tracker.ViewModels\CareQual-Tracker.ViewModels.csproj">
-      <Project>{6397c307-e8c4-4a86-8bb3-f202f3b75510}</Project>
-      <Name>CareQual-Tracker.ViewModels</Name>
-    </ProjectReference>
+    <Compile Include="ViewModels\CareQualUserViewModel.cs" />
+    <Compile Include="ViewModels\QualificationViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CareQual-Tracker.Models\CareQual-Tracker.Models.csproj">
+      <Project>{17ec6dc8-9204-44c3-b206-53c80c6357e3}</Project>
+      <Name>CareQual-Tracker.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets" Condition="Exists('..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" />

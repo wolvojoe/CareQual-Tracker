@@ -1,7 +1,9 @@
-﻿using CareQual_Tracker.Application.Authentication.Interfaces;
+﻿using AutoMapper;
+using CareQual_Tracker.Application.Authentication.Interfaces;
 using CareQual_Tracker.Data.Repositories;
 using CareQual_Tracker.Data.Repositories.Interfaces;
-using CareQual_Tracker_Models.Models;
+using CareQual_Tracker.Models.Models;
+using CareQual_Tracker.ViewModels.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +15,14 @@ namespace CareQual_Tracker.Application.Authentication
     public class CareQualUserAuthService : ICareQualUserAuthService
     {
         private readonly ICareQualUserRepository _careQualUserRepository;
+        private readonly IMapper _mapper;
 
-        public CareQualUserAuthService(ICareQualUserRepository careQualUserRepository)
+
+        public CareQualUserAuthService(ICareQualUserRepository careQualUserRepository, IMapper mapper)
         {
             _careQualUserRepository = careQualUserRepository;
+            _mapper = mapper;
+
         }
 
 
@@ -41,7 +47,7 @@ namespace CareQual_Tracker.Application.Authentication
             return true;
         }
 
-        public CareQualUser Register(string emailAddress, string password)
+        public CareQualUserViewModel Register(string emailAddress, string password)
         {
             var existingUser = _careQualUserRepository.GetByEmailAddress(emailAddress);
             if (existingUser != null)
@@ -49,8 +55,9 @@ namespace CareQual_Tracker.Application.Authentication
                 throw new Exception("A user with this email address already exists.");
             }
             PasswordHelper.CreatePasswordHash(password, out string hash, out string salt);
-            return _careQualUserRepository.Create(emailAddress, hash, salt);
+            var createdCareQualUser = _careQualUserRepository.Create(emailAddress, hash, salt);
 
+            return _mapper.Map<CareQualUserViewModel>(createdCareQualUser);
         }
     }
 }

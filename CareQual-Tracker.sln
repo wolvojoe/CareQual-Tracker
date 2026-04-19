@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareQual-Tracker.Applicatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareQual-Tracker.Web", "CareQual-Tracker.Web\CareQual-Tracker.Web.csproj", "{D720F003-10BA-47C0-A602-49CAEB024B32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareQual-Tracker.ViewModels", "CareQual-Tracker.ViewModels\CareQual-Tracker.ViewModels.csproj", "{6397C307-E8C4-4A86-8BB3-F202F3B75510}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D720F003-10BA-47C0-A602-49CAEB024B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D720F003-10BA-47C0-A602-49CAEB024B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D720F003-10BA-47C0-A602-49CAEB024B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6397C307-E8C4-4A86-8BB3-F202F3B75510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6397C307-E8C4-4A86-8BB3-F202F3B75510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6397C307-E8C4-4A86-8BB3-F202F3B75510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6397C307-E8C4-4A86-8BB3-F202F3B75510}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

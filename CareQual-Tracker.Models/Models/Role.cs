@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CareQual_Tracker_Models.Models
+namespace CareQual_Tracker.Models.Models
 {
     public class Role
     {

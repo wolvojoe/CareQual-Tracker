@@ -67,6 +67,8 @@
     <link rel="stylesheet" href="../Design/css/adminlte.css" />
     <!--end::Required Plugin(AdminLTE)-->
 
+    <link href="../Design/CareQual/CareQual.css" rel="stylesheet" />
+
 
 </head>
 <body class="login-page bg-body-secondary">

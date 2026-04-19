@@ -1,0 +1,32 @@
+﻿
+
+:root {
+    --bs-primary: #64418c;
+    --bs-primary-rgb: 100, 65, 140;
+
+
+    --bs-secondary: #18808c;
+    --bs-secondary-rgb: 24, 128, 140;
+}
+
+
+.btn-primary {
+    --bs-btn-bg: #64418c;
+    --bs-btn-border-color: #64418c;
+    --bs-btn-hover-bg: #18808c;
+    --bs-btn-hover-border-color: #18808c;
+    --bs-btn-active-bg: #18808c;
+    --bs-btn-active-border-color: #18808c;
+}
+
+
+
+
+.btn-secondary {
+    --bs-btn-bg: #64418c;
+    --bs-btn-border-color: #64418c;
+    --bs-btn-hover-bg: #18808c;
+    --bs-btn-hover-border-color: #18808c;
+    --bs-btn-active-bg: #18808c;
+    --bs-btn-active-border-color: #18808c;
+}

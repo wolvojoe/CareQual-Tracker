@@ -1,4 +1,5 @@
-﻿using CareQual_Tracker_Models.Models;
+﻿using CareQual_Tracker.Models.Models;
+using CareQual_Tracker.ViewModels.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace CareQual_Tracker.Application.Authentication.Interfaces
 
         bool Login(string emailAddress, string password);
 
-        CareQualUser Register(string emailAddress, string password);
+        CareQualUserViewModel Register(string emailAddress, string password);
 
     }
 }

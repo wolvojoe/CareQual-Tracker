@@ -4,19 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CareQual_Tracker.Models.Models
+namespace CareQual_Tracker.ViewModels.ViewModels
 {
-    public class CareQualUser
+    public class CareQualUserViewModel
     {
         public int CareQualUserId { get; set; }
 
         public string EmailAddress { get; set; }
-
-        public string PasswordHash { get; set; }
-
-        public string PasswordSalt { get; set; }
-
-        
-        
     }
 }

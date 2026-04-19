@@ -32,10 +32,18 @@ namespace CareQual_Tracker.Web
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.MapPageRoute(
-                "Dashboard", "CareQual/Dashboard", "~/Pages/LoggedIn/Dashboard.aspx"
+                "Default", "", "~/Pages/LoggedOut/Login.aspx"
             );
             routes.MapPageRoute(
                 "Login", "Login", "~/Pages/LoggedOut/Login.aspx"
+            );
+
+
+            routes.MapPageRoute(
+                "Dashboard", "CareQual/Dashboard", "~/Pages/LoggedIn/Dashboard.aspx"
+            );
+            routes.MapPageRoute(
+                "Qualifications", "CareQual/Qualifications", "~/Pages/LoggedIn/Qualifications.aspx"
             );
         }
 
