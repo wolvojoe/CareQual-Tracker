@@ -77,6 +77,8 @@
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
     <form id="form1" runat="server">
 
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnableCdn="true" />
+
         <!--begin::App Wrapper-->
         <div class="app-wrapper">
             <!--begin::Header-->
@@ -117,7 +119,7 @@
                     <a href="/CareQual/Dashboard" class="brand-link">
                         <!--begin::Brand Image-->
                         <img
-                            src="../../Logos/CareQualLogo-Image.jpg"
+                            src="/Logos/CareQualLogo-Image.jpg"
                             alt="CareQual Tracker Logo"
                             class="brand-image opacity-75 shadow" />
                         <!--end::Brand Image-->
@@ -141,7 +143,7 @@
                             id="navigation">
 
                             <li class="nav-item">
-                                <a href="./Dashboard" class="nav-link">
+                                <a href="/CareQual/Dashboard" class="nav-link">
                                     <i class="nav-icon bi bi-speedometer"></i>
                                     <p>Dashboard</p>
                                 </a>
@@ -173,7 +175,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="./Qualifications" class="nav-link">
+                                <a href="/CareQual/Qualifications/List" class="nav-link">
                                     <i class="nav-icon bi bi-award-fill"></i>
                                     <p>Qualifications</p>
                                 </a>

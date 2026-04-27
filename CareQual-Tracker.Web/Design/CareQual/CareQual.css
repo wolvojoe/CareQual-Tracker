@@ -30,3 +30,12 @@
     --bs-btn-active-bg: #18808c;
     --bs-btn-active-border-color: #18808c;
 }
+
+
+.login-background {
+    background: url("../../logos/CareQual-Wheelchair.jpg");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

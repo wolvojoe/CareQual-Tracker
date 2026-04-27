@@ -76,6 +76,10 @@
     <Compile Include="Migrations\202604191441143_changesToQualifications.Designer.cs">
       <DependentUpon>202604191441143_changesToQualifications.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202604272135233_addedDeleteToQual.cs" />
+    <Compile Include="Migrations\202604272135233_addedDeleteToQual.Designer.cs">
+      <DependentUpon>202604272135233_addedDeleteToQual.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CareQualUserRepository.cs" />
@@ -107,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202604191441143_changesToQualifications.resx">
       <DependentUpon>202604191441143_changesToQualifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202604272135233_addedDeleteToQual.resx">
+      <DependentUpon>202604272135233_addedDeleteToQual.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

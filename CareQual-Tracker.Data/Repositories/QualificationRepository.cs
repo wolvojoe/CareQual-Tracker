@@ -19,8 +19,34 @@ namespace CareQual_Tracker.Data.Repositories
 
         public List<Qualification> GetAllQualifications()
         {
-            return _context.Qualification.ToList();
+            return _context.Qualification.Where(x => x.IsDeleted == false).ToList();
         }
 
+        public Qualification GetById(int id)
+        {
+            return _context.Qualification.SingleOrDefault(q => q.QualificationId == id);
+        }
+
+        public Qualification Add(Qualification qualification)
+        {
+            var added = _context.Qualification.Add(qualification);
+            _context.SaveChanges();
+            return added;
+        }
+
+        public void Update(Qualification qualification)
+        {
+            var existing = _context.Qualification.SingleOrDefault(q => q.QualificationId == qualification.QualificationId);
+            if (existing == null) throw new ArgumentException("Qualification not found", nameof(qualification));
+            existing.Name = qualification.Name;
+            existing.AwardingBody = qualification.AwardingBody;
+            _context.SaveChanges();
+        }
+
+        public void Delete(int id)
+        {
+            _context.Qualification.FirstOrDefault(x => x.QualificationId == id).IsDeleted = true;
+            _context.SaveChanges();
+        }
     }
 }

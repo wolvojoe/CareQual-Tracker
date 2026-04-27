@@ -13,5 +13,7 @@ namespace CareQual_Tracker.Models.Models
         public string Name { get; set; }
 
         public string AwardingBody { get; set; }
+
+        public bool IsDeleted { get; set; }
     }
 }

@@ -22,12 +22,36 @@ namespace CareQual_Tracker.Application.Administrator
             _mapper = mapper;
         }
 
-
-        public List<CareQualUserViewModel> GetAllQualifications()
+        public List<QualificationViewModel> GetAllQualifications()
         {
             var qualifications = _qualificationRepository.GetAllQualifications();
-            return _mapper.Map<List<CareQualUserViewModel>>(qualifications);
+            return _mapper.Map<List<QualificationViewModel>>(qualifications);
         }
 
+        public QualificationViewModel GetQualificationById(int id)
+        {
+            var entity = _qualificationRepository.GetById(id);
+            return entity == null ? null : _mapper.Map<QualificationViewModel>(entity);
+        }
+
+        public QualificationViewModel CreateQualification(QualificationViewModel model)
+        {
+            if (model == null) throw new ArgumentNullException(nameof(model));
+            var entity = _mapper.Map<Qualification>(model);
+            var created = _qualificationRepository.Add(entity);
+            return _mapper.Map<QualificationViewModel>(created);
+        }
+
+        public void UpdateQualification(QualificationViewModel model)
+        {
+            if (model == null) throw new ArgumentNullException(nameof(model));
+            var entity = _mapper.Map<Qualification>(model);
+            _qualificationRepository.Update(entity);
+        }
+
+        public void DeleteQualification(int id)
+        {
+            _qualificationRepository.Delete(id);
+        }
     }
 }

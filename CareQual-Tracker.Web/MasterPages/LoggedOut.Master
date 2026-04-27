@@ -71,7 +71,7 @@
 
 
 </head>
-<body class="login-page bg-body-secondary">
+<body class="login-page bg-body-secondary login-background">
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

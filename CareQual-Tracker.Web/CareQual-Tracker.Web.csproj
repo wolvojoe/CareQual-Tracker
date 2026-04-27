@@ -53,6 +53,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FluentValidation, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.11.9.2\lib\netstandard2.0\FluentValidation.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.6, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.6\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -166,11 +169,13 @@
     <Content Include="Design\js\adminlte.js" />
     <Content Include="Design\js\adminlte.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Logos\CareQual-Wheelchair.jpg" />
     <Content Include="Logos\CareQualLogo-Image.jpg" />
     <Content Include="Logos\CareQualLogo-Tran.jpg" />
     <Content Include="Logos\CareQualLogo.jpg" />
+    <Content Include="Pages\LoggedIn\Administration\Qualifications\List.aspx" />
+    <Content Include="Pages\LoggedIn\Administration\Qualifications\Qualification.aspx" />
     <Content Include="Pages\LoggedIn\Dashboard.aspx" />
-    <Content Include="Pages\LoggedIn\Qualifications.aspx" />
     <Content Include="Pages\LoggedOut\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -193,19 +198,26 @@
       <DependentUpon>LoggedIn.Master</DependentUpon>
     </Compile>
     <Compile Include="NinjectBindings.cs" />
+    <Compile Include="Pages\LoggedIn\Administration\Qualifications\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoggedIn\Administration\Qualifications\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoggedIn\Administration\Qualifications\Qualification.aspx.cs">
+      <DependentUpon>Qualification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoggedIn\Administration\Qualifications\Qualification.aspx.designer.cs">
+      <DependentUpon>Qualification.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LoggedIn\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\LoggedIn\Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\LoggedIn\Qualifications.aspx.cs">
-      <DependentUpon>Qualifications.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\LoggedIn\Qualifications.aspx.designer.cs">
-      <DependentUpon>Qualifications.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\LoggedOut\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -236,6 +248,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="App_Start\" />
+    <Folder Include="Pages\LoggedIn\CareHomes\" />
+    <Folder Include="Pages\LoggedIn\Staff\" />
     <Folder Include="UserControls\" />
   </ItemGroup>
   <ItemGroup>

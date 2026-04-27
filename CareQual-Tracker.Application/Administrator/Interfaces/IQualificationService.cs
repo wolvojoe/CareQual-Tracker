@@ -10,8 +10,10 @@ namespace CareQual_Tracker.Application.Administrator.Interfaces
 {
     public interface IQualificationService
     {
-
-        List<CareQualUserViewModel> GetAllQualifications();
-
+        List<QualificationViewModel> GetAllQualifications();
+        QualificationViewModel GetQualificationById(int id);
+        QualificationViewModel CreateQualification(QualificationViewModel model);
+        void UpdateQualification(QualificationViewModel model);
+        void DeleteQualification(int id);
     }
 }
