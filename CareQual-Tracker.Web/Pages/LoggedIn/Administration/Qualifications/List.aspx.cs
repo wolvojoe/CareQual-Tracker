@@ -36,8 +36,6 @@ namespace CareQual_Tracker.Web.Pages.LoggedIn.Administration
                 return;
             }
 
-
-            gvQualifications.PageIndex = 0;
             gvQualifications.DataSource = QualificationService.GetAllQualifications();
             gvQualifications.DataBind();
         }
@@ -57,10 +55,8 @@ namespace CareQual_Tracker.Web.Pages.LoggedIn.Administration
 
         protected void lbtnDelete_Command(object sender, CommandEventArgs e)
         {
-
-            var cheese = e.CommandArgument;
             QualificationService.DeleteQualification(Convert.ToInt32(e.CommandArgument));
-
+            BindGrid();
         }
     }
 }

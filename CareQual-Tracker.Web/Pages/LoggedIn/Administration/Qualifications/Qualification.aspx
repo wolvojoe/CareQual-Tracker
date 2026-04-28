@@ -10,9 +10,9 @@
    <div class="container-fluid">
        <div class="row">
            <div class="col-12">
-               <div class="card card-primary card-outline mb-4">
+               <div class="card card-primary card-outline mb-4 careQual-card-custom">
                    <div class="card-header">
-                       <div class="card-title">Qualification details</div>
+                       <div class="card-title">Qualification Details</div>
                    </div>
                    <div class="card-body">
                        <asp:ValidationSummary ID="vsSummary" runat="server" CssClass="text-danger mb-3" HeaderText="Please correct the following:" />
@@ -38,4 +38,8 @@
            </div>
        </div>
    </div>
+
+
+
+
 </asp:Content>

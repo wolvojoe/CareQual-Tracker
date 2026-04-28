@@ -71,6 +71,8 @@
         integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4="
         crossorigin="anonymous" />
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link href="../Design/CareQual/CareQual.css" rel="stylesheet" />
 
 </head>
@@ -485,6 +487,8 @@
             const sparkline3 = new ApexCharts(document.querySelector('#sparkline-3'), option_sparkline3);
             sparkline3.render();
         </script>
+
+
         <!--end::Script-->
     </form>
 </body>

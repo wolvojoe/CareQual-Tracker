@@ -23,12 +23,12 @@
 
 
 .btn-secondary {
-    --bs-btn-bg: #64418c;
-    --bs-btn-border-color: #64418c;
-    --bs-btn-hover-bg: #18808c;
-    --bs-btn-hover-border-color: #18808c;
-    --bs-btn-active-bg: #18808c;
-    --bs-btn-active-border-color: #18808c;
+    --bs-btn-bg: #18808c;
+    --bs-btn-border-color: #18808c;
+    --bs-btn-hover-bg: #8774A4;
+    --bs-btn-hover-border-color: #8774A4;
+    --bs-btn-active-bg: #8774A4;
+    --bs-btn-active-border-color: #8774A4;
 }
 
 
@@ -38,4 +38,51 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+.careQual-card-custom {
+    border-top: 2px solid #64418c !important;
+}
+
+
+.bootstrap-pager {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.bootstrap-pager table {
+    margin: 0;
+    margin-left: auto;
+}
+
+.bootstrap-pager td {
+    border: none !important;
+}
+
+.bootstrap-pager a,
+.bootstrap-pager span {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 0 2px;
+    font-size: 0.875rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.2rem;
+    text-decoration: none;
+}
+
+.bootstrap-pager a {
+    color: #18808c;
+    background-color: #fff;
+}
+
+.bootstrap-pager a:hover {
+    background-color: #18808c;
+    color: #fff;
+}
+
+.bootstrap-pager span {
+    color: #fff;
+    background-color: #64418c;
+    border-color: #64418c;
 }
