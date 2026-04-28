@@ -77,9 +77,10 @@
             Swal.fire({
                 title: 'Are you sure?',
                 text: "This record will be deleted.",
-                icon: 'warning',
+                icon: 'error',
                 showCancelButton: true,
                 confirmButtonText: 'Yes, delete it!',
+                confirmButtonColor: '#64418c',
                 cancelButtonText: 'Cancel'
             }).then((result) => {
                 if (result.isConfirmed) {
@@ -87,7 +88,7 @@
                 }
             });
 
-            return false; // stop default postback
+            return false;
         }
 </script>
 </asp:Content>

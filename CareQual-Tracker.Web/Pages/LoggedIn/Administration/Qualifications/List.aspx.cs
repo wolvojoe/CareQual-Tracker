@@ -23,19 +23,10 @@ namespace CareQual_Tracker.Web.Pages.LoggedIn.Administration
             {
                 BindGrid();
             }
-
-
         }
 
         private void BindGrid()
         {
-            if (QualificationService == null)
-            {
-                gvQualifications.DataSource = null;
-                gvQualifications.DataBind();
-                return;
-            }
-
             gvQualifications.DataSource = QualificationService.GetAllQualifications();
             gvQualifications.DataBind();
         }
@@ -50,8 +41,6 @@ namespace CareQual_Tracker.Web.Pages.LoggedIn.Administration
         {
             Response.RedirectToRoute("Qualification");
         }
-
-
 
         protected void lbtnDelete_Command(object sender, CommandEventArgs e)
         {

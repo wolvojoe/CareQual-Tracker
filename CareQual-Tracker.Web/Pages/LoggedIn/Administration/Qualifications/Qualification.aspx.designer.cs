@@ -15,6 +15,15 @@ namespace CareQual_Tracker.Web.Pages.LoggedIn.Administration.Qualifications
     {
 
         /// <summary>
+        /// upnQualificationDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel upnQualificationDetails;
+
+        /// <summary>
         /// vsSummary control.
         /// </summary>
         /// <remarks>
