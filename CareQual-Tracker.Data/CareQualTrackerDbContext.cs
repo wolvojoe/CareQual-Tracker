@@ -1,5 +1,5 @@
 ﻿using CareQual_Tracker.Models.Models;
-using CareQual_Tracker.Models.Models.Staff;
+using CareQual_Tracker.Models.Models.CareStaff;
 using System;
 using System.Collections;
 using System.Collections.Generic;

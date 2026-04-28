@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CareQual_Tracker.Web.Pages.LoggedIn.Administration
+namespace CareQual_Tracker.Web.Pages.LoggedIn.Staff
 {
 
 
-    public partial class List
+    public partial class StaffList
     {
 
         /// <summary>
@@ -24,21 +24,21 @@ namespace CareQual_Tracker.Web.Pages.LoggedIn.Administration
         protected global::System.Web.UI.WebControls.Button btnCreate;
 
         /// <summary>
-        /// upnQualificationGrid control.
+        /// upnCareStaff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel upnQualificationGrid;
+        protected global::System.Web.UI.UpdatePanel upnCareStaff;
 
         /// <summary>
-        /// gvQualifications control.
+        /// gvCareStaff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvQualifications;
+        protected global::System.Web.UI.WebControls.GridView gvCareStaff;
     }
 }

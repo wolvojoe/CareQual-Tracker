@@ -80,9 +80,15 @@
     <Compile Include="Migrations\202604272135233_addedDeleteToQual.Designer.cs">
       <DependentUpon>202604272135233_addedDeleteToQual.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202604281423554_CarehomeName.cs" />
+    <Compile Include="Migrations\202604281423554_CarehomeName.Designer.cs">
+      <DependentUpon>202604281423554_CarehomeName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CareHomeRepository.cs" />
     <Compile Include="Repositories\CareQualUserRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICareHomeRepository.cs" />
     <Compile Include="Repositories\Interfaces\ICareQualUserRepository.cs" />
     <Compile Include="Repositories\Interfaces\IQualificationRepository.cs" />
     <Compile Include="Repositories\Interfaces\IStaffRepository.cs" />
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202604272135233_addedDeleteToQual.resx">
       <DependentUpon>202604272135233_addedDeleteToQual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202604281423554_CarehomeName.resx">
+      <DependentUpon>202604281423554_CarehomeName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -42,8 +42,14 @@ namespace CareQual_Tracker.Web
             routes.MapPageRoute("Default", "", "~/Pages/LoggedOut/Login.aspx");
             routes.MapPageRoute("Login", "Login", "~/Pages/LoggedOut/Login.aspx");
             routes.MapPageRoute("Dashboard", "CareQual/Dashboard", "~/Pages/LoggedIn/Dashboard.aspx");
-            routes.MapPageRoute("Qualifications", "CareQual/Qualifications/List", "~/Pages/LoggedIn/Administration/Qualifications/List.aspx");
+            routes.MapPageRoute("Qualifications", "CareQual/Qualifications/List", "~/Pages/LoggedIn/Administration/Qualifications/QualificationsList.aspx");
             routes.MapPageRoute("Qualification", "CareQual/Qualifications/Details", "~/Pages/LoggedIn/Administration/Qualifications/Qualification.aspx");
+
+            routes.MapPageRoute("CareHomes", "CareQual/CareHomes/List", "~/Pages/LoggedIn/CareHomes/CareHomesList.aspx");
+            routes.MapPageRoute("CareHome", "CareQual/CareHomes/Details", "~/Pages/LoggedIn/CareHomes/CareHome.aspx");
+
+            routes.MapPageRoute("CareStaffList", "CareQual/Staff/List", "~/Pages/LoggedIn/Staff/StaffList.aspx");
+            routes.MapPageRoute("CareStaff", "CareQual/Staff/Details", "~/Pages/LoggedIn/Staff/Staff.aspx");
         }
     }
 }

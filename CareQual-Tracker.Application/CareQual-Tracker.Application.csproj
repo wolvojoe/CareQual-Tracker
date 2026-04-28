@@ -113,6 +113,10 @@
     <Compile Include="Authentication\CareQualUserAuthService.cs" />
     <Compile Include="Authentication\Interfaces\ICareQualUserAuthService.cs" />
     <Compile Include="Authentication\PasswordHelper.cs" />
+    <Compile Include="CareHomes\CareHomeService.cs" />
+    <Compile Include="CareHomes\Interfaces\ICareHomeService.cs" />
+    <Compile Include="CareStaff\Interfaces\IStaffService.cs" />
+    <Compile Include="CareStaff\StaffService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validation\CareQualUserViewModelValidator.cs" />
   </ItemGroup>

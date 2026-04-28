@@ -1,4 +1,4 @@
-﻿using CareQual_Tracker.Models.Models.Staff;
+﻿using CareQual_Tracker.Models.Models.CareStaff;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,6 +10,7 @@ namespace CareQual_Tracker.Data.Repositories.Interfaces
 {
     public interface IStaffRepository
     {
+        IEnumerable<Staff> GetAllStaff();
         IEnumerable<Staff> GetByCareHome(int careHomeId);
         Staff GetById(int id);
         void Add(Staff Staff);

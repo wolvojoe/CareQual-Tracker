@@ -153,14 +153,14 @@
 
                             <li class="nav-header"></li>
                             <li class="nav-item">
-                                <a href="./generate/theme.html" class="nav-link">
+                                <a href="/CareQual/CareHomes/List" class="nav-link">
                                     <i class="nav-icon bi bi-building"></i>
                                     <p>Care Homes</p>
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="./generate/theme.html" class="nav-link">
+                                <a href="/CareQual/Staff/List" class="nav-link">
                                     <i class="nav-icon bi bi-person"></i>
                                     <p>Care Staff</p>
                                 </a>

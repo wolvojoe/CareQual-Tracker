@@ -173,9 +173,13 @@
     <Content Include="Logos\CareQualLogo-Image.jpg" />
     <Content Include="Logos\CareQualLogo-Tran.jpg" />
     <Content Include="Logos\CareQualLogo.jpg" />
-    <Content Include="Pages\LoggedIn\Administration\Qualifications\List.aspx" />
+    <Content Include="Pages\LoggedIn\Administration\Qualifications\QualificationsList.aspx" />
     <Content Include="Pages\LoggedIn\Administration\Qualifications\Qualification.aspx" />
+    <Content Include="Pages\LoggedIn\CareHomes\CareHome.aspx" />
+    <Content Include="Pages\LoggedIn\CareHomes\CareHomesList.aspx" />
     <Content Include="Pages\LoggedIn\Dashboard.aspx" />
+    <Content Include="Pages\LoggedIn\Staff\Staff.aspx" />
+    <Content Include="Pages\LoggedIn\Staff\StaffList.aspx" />
     <Content Include="Pages\LoggedOut\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -198,12 +202,12 @@
       <DependentUpon>LoggedIn.Master</DependentUpon>
     </Compile>
     <Compile Include="NinjectBindings.cs" />
-    <Compile Include="Pages\LoggedIn\Administration\Qualifications\List.aspx.cs">
-      <DependentUpon>List.aspx</DependentUpon>
+    <Compile Include="Pages\LoggedIn\Administration\Qualifications\QualificationsList.aspx.cs">
+      <DependentUpon>QualificationsList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\LoggedIn\Administration\Qualifications\List.aspx.designer.cs">
-      <DependentUpon>List.aspx</DependentUpon>
+    <Compile Include="Pages\LoggedIn\Administration\Qualifications\QualificationsList.aspx.designer.cs">
+      <DependentUpon>QualificationsList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\LoggedIn\Administration\Qualifications\Qualification.aspx.cs">
       <DependentUpon>Qualification.aspx</DependentUpon>
@@ -212,12 +216,40 @@
     <Compile Include="Pages\LoggedIn\Administration\Qualifications\Qualification.aspx.designer.cs">
       <DependentUpon>Qualification.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\LoggedIn\CareHomes\CareHome.aspx.cs">
+      <DependentUpon>CareHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoggedIn\CareHomes\CareHome.aspx.designer.cs">
+      <DependentUpon>CareHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoggedIn\CareHomes\CareHomesList.aspx.cs">
+      <DependentUpon>CareHomesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoggedIn\CareHomes\CareHomesList.aspx.designer.cs">
+      <DependentUpon>CareHomesList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LoggedIn\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\LoggedIn\Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoggedIn\Staff\Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoggedIn\Staff\Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoggedIn\Staff\StaffList.aspx.cs">
+      <DependentUpon>StaffList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LoggedIn\Staff\StaffList.aspx.designer.cs">
+      <DependentUpon>StaffList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\LoggedOut\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -248,8 +280,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="App_Start\" />
-    <Folder Include="Pages\LoggedIn\CareHomes\" />
-    <Folder Include="Pages\LoggedIn\Staff\" />
     <Folder Include="UserControls\" />
   </ItemGroup>
   <ItemGroup>

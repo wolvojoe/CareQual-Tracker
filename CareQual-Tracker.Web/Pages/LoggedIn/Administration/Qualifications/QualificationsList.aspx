@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/LoggedIn.Master" AutoEventWireup="true" CodeBehind="List.aspx.cs" Inherits="CareQual_Tracker.Web.Pages.LoggedIn.Administration.List" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/LoggedIn.Master" AutoEventWireup="true" CodeBehind="QualificationsList.aspx.cs" Inherits="CareQual_Tracker.Web.Pages.LoggedIn.Administration.QualificationsList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" runat="server">
 </asp:Content>

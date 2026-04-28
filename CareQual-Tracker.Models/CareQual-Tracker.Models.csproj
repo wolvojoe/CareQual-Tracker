@@ -46,9 +46,9 @@
     <Compile Include="Models\Qualification.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\SalaryFrequency.cs" />
-    <Compile Include="Models\Staff\Staff.cs" />
-    <Compile Include="Models\Staff\StaffQualification.cs" />
-    <Compile Include="Models\Staff\StaffSalary.cs" />
+    <Compile Include="Models\CareStaff\Staff.cs" />
+    <Compile Include="Models\CareStaff\StaffQualification.cs" />
+    <Compile Include="Models\CareStaff\StaffSalary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,7 +12,7 @@ using System.Web.UI.WebControls;
 
 namespace CareQual_Tracker.Web.Pages.LoggedIn.Administration
 {
-    public partial class List : Ninject.Web.PageBase
+    public partial class QualificationsList : Ninject.Web.PageBase
     {
         [Inject]
         public IQualificationService QualificationService { get; set; }

@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CareQual_Tracker.Models.Models
+namespace CareQual_Tracker.ViewModels.ViewModels
 {
-    public class CareHome
+    public class CareHomeViewModel
     {
         public int CareHomeId { get; set; }
 

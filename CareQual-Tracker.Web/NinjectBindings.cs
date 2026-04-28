@@ -3,6 +3,10 @@ using CareQual_Tracker.Application.Administrator;
 using CareQual_Tracker.Application.Administrator.Interfaces;
 using CareQual_Tracker.Application.Authentication;
 using CareQual_Tracker.Application.Authentication.Interfaces;
+using CareQual_Tracker.Application.CareHomes;
+using CareQual_Tracker.Application.CareHomes.Interfaces;
+using CareQual_Tracker.Application.CareStaff;
+using CareQual_Tracker.Application.CareStaff.Interfaces;
 using CareQual_Tracker.Data;
 using CareQual_Tracker.Data.Repositories;
 using CareQual_Tracker.Data.Repositories.Interfaces;
@@ -32,11 +36,19 @@ namespace CareQual_Tracker.Web
             Bind<IQualificationRepository>().To<QualificationRepository>();
             Bind<IQualificationService>().To<QualificationService>();
 
+            Bind<ICareHomeRepository>().To<CareHomeRepository>();
+            Bind<ICareHomeService>().To<CareHomeService>();
+
+            Bind<IStaffRepository>().To<StaffRepository>();
+            Bind<IStaffService>().To<StaffService>();
+
 
             var mapperConfig = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile<QualificationProfile>();
                 cfg.AddProfile<CareQualUserProfile>();
+                cfg.AddProfile<CareHomeProfile>();
+                cfg.AddProfile<StaffProfile>();
             }, NullLoggerFactory.Instance);
 
             Bind<IMapper>().ToMethod(ctx => mapperConfig.CreateMapper()).InSingletonScope();

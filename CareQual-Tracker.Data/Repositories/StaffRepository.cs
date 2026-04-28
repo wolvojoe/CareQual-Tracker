@@ -1,5 +1,5 @@
 ﻿using CareQual_Tracker.Data.Repositories.Interfaces;
-using CareQual_Tracker.Models.Models.Staff;
+using CareQual_Tracker.Models.Models.CareStaff;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,6 +17,11 @@ namespace CareQual_Tracker.Data.Repositories
         public StaffRepository(CareQualTrackerDbContext context)
         {
             _context = context;
+        }
+
+        public IEnumerable<Staff> GetAllStaff()
+        {
+            return _context.Staff.ToList();
         }
 
         public IEnumerable<Staff> GetByCareHome(int careHomeId)

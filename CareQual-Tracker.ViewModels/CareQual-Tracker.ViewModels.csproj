@@ -105,11 +105,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mapping\CareHomeProfile.cs" />
     <Compile Include="Mapping\CareQualUserProfile.cs" />
     <Compile Include="Mapping\QualificationProfile.cs" />
+    <Compile Include="Mapping\StaffProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CareHomeViewModel.cs" />
     <Compile Include="ViewModels\CareQualUserViewModel.cs" />
     <Compile Include="ViewModels\QualificationViewModel.cs" />
+    <Compile Include="ViewModels\StaffViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
